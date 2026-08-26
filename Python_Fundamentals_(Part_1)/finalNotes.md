@@ -86,3 +86,39 @@ Note: Google recommends running `pylint` to find bugs and style problems.
  `//=` -   Floor divide and assign 
  `%=` -   Modulo and assign       
  `**=` -  Power and assign        
+
+# 9. Logical Operator: 
+`and` - True if both conditions are True
+`or` - True if at least one condition is True
+`not` - Reverses the result 
+
+# 10. Operator Precedence: 
+
+| Priority | Operator                         | Meaning                 |
+| -------: | -------------------------------- | ----------------------- |
+|        1 | `()`                             | Parentheses             |
+|        2 | `**`                             | Exponent                |
+|        3 | `+x`, `-x`                       | Unary plus/minus        |
+|        4 | `*`, `/`, `//`, `%`              | Multiplication/division |
+|        5 | `+`, `-`                         | Addition/subtraction    |
+|        6 | `<`, `>`, `<=`, `>=`, `==`, `!=` | Comparisons             |
+|        7 | `not`                            | Logical NOT             |
+|        8 | `and`                            | Logical AND             |
+|        9 | `or`                             | Logical OR              |
+
+# 11. Common Type Conversion
+
+| Function  | Converts to | Example                           |
+| --------- | ----------- | --------------------------------- |
+| `int()`   | Integer     | `int("10")` → `10`                |
+| `float()` | Float       | `float("10")` → `10.0`            |
+| `str()`   | String      | `str(10)` → `"10"`                |
+| `bool()`  | Boolean     | `bool(1)` → `True`                |
+
+# Taking User Input: 
+| Code                        | Purpose                      |
+| --------------------------- | ---------------------------- |
+| `input()`                   | Take user input as a string  |
+| `int(input())`              | Take integer input           |
+| `float(input())`            | Take decimal/float input     |
+

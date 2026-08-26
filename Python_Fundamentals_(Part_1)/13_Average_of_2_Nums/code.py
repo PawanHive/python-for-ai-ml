@@ -1,0 +1,8 @@
+# Calculate average of 2 numbers
+
+a = float (input("enter 1st num: "))
+b = float (input("enter 2st num: "))
+
+avg = (a + b) / 2
+
+print("avg of 2 nums = ", avg)
