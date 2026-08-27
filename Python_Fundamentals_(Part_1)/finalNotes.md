@@ -1,3 +1,6 @@
+![](Python-fundamental-part-1.png)
+![](Python-fundamental-part-1(2).png)
+
 # 1. Python Indentifer rules
 
 - Can contains letters (A-Z, a-z)
@@ -122,3 +125,37 @@ Note: Google recommends running `pylint` to find bugs and style problems.
 | `int(input())`              | Take integer input           |
 | `float(input())`            | Take decimal/float input     |
 
+# 12. f-string : (formatted String Literal)
+
+-   **F-string** = Formatted String Literal.
+-   Used to **insert variables/expressions directly into a string**.
+-   Add `f` before the string and put variables inside `{}`.
+
+``` python
+name = "Pawan"
+age = 24
+
+print(f"My name is {name} and I am {age} years old.")
+```
+
+**Output:**
+
+``` text
+My name is Pawan and I am 24 years old.
+```
+
+**Syntax:**
+
+``` python
+f"Text {variable}"
+```
+
+# 13. SWAP two numbers
+
+a = input("enter value of a : ")
+b = input("enter value of b : ")
+
+a, b = b, a   # python do this automatically using python tuple unpacking (without 'temp' variable)
+
+print(f"value of a : {a}")
+print(f"value of b : {b}")
