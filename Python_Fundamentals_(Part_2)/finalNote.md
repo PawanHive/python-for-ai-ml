@@ -109,9 +109,46 @@ while (i >= 1):
 print("printed reverse")
 ```
 
-# 6.1: Remember Indentation effect in python
+# 7: Remember Indentation effect in python
 - indentation defines a block of code.
 - same indentation - same block
 - more indentation - inside the previous block
 - less indentation - outside the block
 - python uses indentation instead of `{}`
+
+# 8: Multiplication Table of any number `n`
+```python
+n = int(input("enter number : "))
+
+i = 1; 
+while ( i <= 10): 
+  print(f"{n} * {i} = {n*i}")
+  i += 1
+```
+
+# 9: Break and Continue
+## `Break`
+- Stops the loop completely.
+- Execution continues after the loop.
+**Examples:**
+```python
+i = 1
+while (i <= 10):
+  if (i % 6 ==0):
+    break
+  print(i)
+  i += 1
+```
+
+## `continue`
+- Skips the current iteration and moves to the next iteration.
+**Examples:**
+```python
+# print odd number between 1 - 10
+i = 0
+while (i < 10):
+  i += 1
+  if (i % 2 == 0):
+    continue
+  print(i)
+```
