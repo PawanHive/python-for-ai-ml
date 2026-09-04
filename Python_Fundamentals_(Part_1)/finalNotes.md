@@ -1,5 +1,6 @@
-![](Python-fundamental-part-1.png)
-![](Python-fundamental-part-1(2).png)
+![Python_fundamental_(part_1)-1](../images/Python_fundamental_(part_1)-1.png)
+![Python_fundamental_(part_1)-2](../images/Python_fundamental_(part_1)-2.png)
+
 
 # 1. Python Indentifer rules
 
