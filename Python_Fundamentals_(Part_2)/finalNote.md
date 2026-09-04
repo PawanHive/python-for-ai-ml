@@ -152,3 +152,152 @@ while (i < 10):
     continue
   print(i)
 ```
+
+# 10: loops using `for`
+
+- **for loop** - repeats code for each item in a sequence.
+- `in` - takes each item **one by one** from the sequence and also use in conditional statement to check item exits or not.
+
+**Syntax**
+```python
+for variable in sequence:
+  # code
+```
+
+**Example:**
+```python
+for i in range(5):
+  print(i)
+```
+output: 
+```terminal
+0
+1
+2
+3
+4
+```
+
+**Remember:** `for x in collection` = "for each x/item in the collection/sequence/something"
+
+## 10.1: `in` keyword used in both `for` loops and conditional statements.
+
+### 1. in `for` loop
+- `in` means **"take each item from"**
+```python
+for letter in "apple":
+  print(letter)
+```
+output:
+```terminal
+a
+p
+p
+l
+e
+```
+
+### 2. in conditional statement
+- `in` means **"is this item exits/present inside?"**
+```python
+if "a" in "apple":
+  print("found")
+```
+output:
+```terminal
+found
+```
+
+## 10.2: How many times 'i' letter occur in these phrase = "artificial intelligence"
+```python
+phrase = "artificial intelligence"
+
+ans = 0
+
+for letter in phrase:
+  if (letter == "i"):
+    ans = ans + 1
+
+print(f"count of letter i = {ans}") 
+```
+output: 
+```terminal 
+count of letter i = 5
+```
+
+# 11: count number of vowel present in word="artificial" 
+
+```python
+word = "artificial"
+
+count = 0
+
+for ch in word:
+  if (ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u'):
+    count = count + 1
+
+print("ans : ", count)
+```
+
+output: 
+```terminal
+ans : 5
+```
+
+# 12: range() function
+
+## 1. range(stop)
+- Starts from `0` and goes up to `stop - 1`.
+
+```python
+for i in range(5):
+    print(i)
+```
+Output:
+```
+0
+1
+2
+3
+4
+```
+
+## 2. range(start, stop)
+- Starts from `start` and goes up to `stop - 1`.
+
+```python
+for i in range(2, 6):
+    print(i)
+```
+Output:
+```
+2
+3
+4
+5
+```
+
+## 3. range(start, stop, step)
+- `step` tells Python how much to **increase/decrease** each time.
+
+```python
+for i in range(0, 10, 2):
+    print(i)
+```
+Output:
+```
+0
+2
+4
+6
+8
+```
+
+**Remember**
+`range(start, stop, step)`
+
+`start` → where to start
+`stop` → where to stop (not included)
+`step` → how much to jump
+
+👉 The `stop` value is always excluded.
