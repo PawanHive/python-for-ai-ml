@@ -1,3 +1,5 @@
+![Python_Fundamentals_(Part_2)-1](../images/Python_Fundamentals_(Part_2)-1.png)
+
 # 1: Conditional Statement in Python
 - Used to make decisions based on a condition.
 `if` - Execute when condition is **True**. (`if` or `if-else` or **nested** `if`)
