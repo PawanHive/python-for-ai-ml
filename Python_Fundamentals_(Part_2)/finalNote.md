@@ -304,3 +304,132 @@ Output:
 `step` → how much to jump
 
 👉 The `stop` value is always excluded.
+
+# 13. Sum of N numbers
+
+```python
+n = int(input("enter number : "))
+
+sum = 0
+
+for i in range(1, n+1):
+  sum += i
+print ("sum =", sum)
+```
+
+the function of formula for sum of the first N natural numbers is : `f(n) = n(n + 1) / 2`
+
+# 14. Functions in Python
+- A **function** is a reusable block of code that performs a specific task.
+- instead of writing the same code again and again, we **define it once** and **call it whenever needed**.
+
+**Syntax:**
+```python
+def function_name():
+  # code
+```
+
+## 1. Example
+```python
+def greet():  # this is function definition
+  print("Hello, Pawan!")
+
+greet()   # this is function call
+```
+```
+output: Hello, Pawan!
+```
+
+
+## 2. Functions with `Parameter` and `Argument`
+
+```python
+def greet1(name): # here 'name' is parameter
+  print("Hello", name)
+
+greet1("Suraj!") # here 'Suraj!' passes as argument
+```
+```python
+output: Hello Suraj!
+```
+
+## funcions with `return`
+```python
+def add(a, b):
+  return a + b  # 'return' will send result back
+
+print(add(5, 6))  # 5, 6 = argument
+```
+```python
+output: 11
+```
+
+### Remember
+`Parameter` = receive input to a function **(placeholder)**
+`Argument` = actual values we pass **(actual value)**
+`Return` = sends the result back from a function **(output)**
+
+# 15. Default Parameter in Python
+- a **default parameter** is a parameter that already has a **default value**. if the caller doesn't provide a value, Python uses that **default**.
+
+```python
+def sum(a, b=1):  
+  return a + b
+
+print(sum(5, 6)) # output: 11
+print(sum(5))  # output: 6
+```
+
+### Remember 
+**Required parameter first → Default parameter later**
+
+```
+def function(required, default):
+              ↑          ↑
+           non-default   has default
+```
+
+# 16. Types of Functions
+`Built-in` = **Python gives it**
+`User-defined` = **You create it**
+
+# 17. `lambda` functions
+- a `lambda function` is a **small anonymous function** (a function without a name) used for simple operations
+
+**Syntax:**
+```python
+lambda parameters: expression
+```
+
+**Normal functions:**
+```python
+def sum(a, b):
+  return a + b
+
+print(sum(1, 2))
+```
+
+**`lambda` functions:**
+```python
+sum = lambda a, b: a + b
+print(sum(3, 4))
+```
+
+# 18. Factorial of N
+
+```python
+def calc_factorial(n):
+  fact = 1
+  for i in range (1, n + 1):
+    fact = fact * i
+
+  return fact
+
+n = int(input("enter n: "))
+print(calc_factorial(n))
+```
+```terminal
+output:
+enter n: 5
+120
+```
